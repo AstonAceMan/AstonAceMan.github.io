@@ -4,7 +4,7 @@
 The FiveM Discord Bot is a Discord bot which shows a playerlist and status for FiveM Servers.
 
 ### How it Works
-The bot runs off of a privately-hosted server and is build on a [Node.JS](https://nodejs.org)  framework running, you guessed it, Javascript.
+The bot runs off of a privately-hosted server and is build on a [Node.JS](https://nodejs.org)  framework running (you guessed it) Javascript.
 
 ### Commands
 `-status` or `-s` for short returns the full playerlist for the server. It also displays a link called connect which connects you to the server through a browser opening the FiveM application. Here you can see the command being used to check the playerlist of [TXDPS-RP](https://txdps-rp.com/):
