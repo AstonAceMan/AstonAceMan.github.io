@@ -18,4 +18,4 @@ The bot runs off of a privately-hosted server and is build on a [Node.JS](https:
 ![id command](https://astonaceman.github.io/resources/img2.PNG)
 
 ### Conclusion
-Although this was a fairly simple project, it is a useful one that I continue to use to this day. This repo is not available to the public yet, but may become public in the near future.
+Although this was a fairly simple project, it is a useful one that I continue to use to this day. The current version of this project is not available on GitHub, but you can view the source of an older version of the bot back when it used to be hosted on Heroku: [![ok then](https://img.shields.io/badge/-View%20Repo-inactive?logo=github)](https:///github.com/AstonAceMan/FiveM)
