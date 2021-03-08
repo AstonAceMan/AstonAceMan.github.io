@@ -1,21 +1,23 @@
-[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonaceman.github.io) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonaceman.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-FiveM%20Discord%20Bot-purple?style=for-the-badge)](https://astonaceman.github.io/projects/fivemdiscordbot)
 
-![ok then](https://img.shields.io/badge/-NodeJS-green?logo=node.js) ![ok then](https://img.shields.io/badge/-JSON-red?logo=json) ![ok then](https://img.shields.io/badge/-Discord%20API-9cf?logo=discord)
+[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonaceman.github.io) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonaceman.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-Roblox%20Admin%20Panel-purple?style=for-the-badge)](https://astonaceman.github.io/projects/robloxadminpanel)
 
-## FiveM Discord Bot
-The FiveM Discord Bot is a Discord bot which shows a playerlist and status for FiveM Servers.
+![](https://img.shields.io/badge/-Lua-9cf?logo=lua) ![](https://img.shields.io/badge/-HTML-lightgrey?logo=html5) ![](https://img.shields.io/badge/-CSS-yellow?logo=css3) ![](https://img.shields.io/badge/-Javascript-red?logo=javascript)
+
+## Roblox Admin Panel
+The Roblox Admin Panel is a system for moderating players in Roblox games. This was a commission so some details may be limited such as source code but screenshots and documentation is available to the public and is shown here.
 
 ### How it Works
-The bot runs off of a privately-hosted server and is build on a [Node.JS](https://nodejs.org)  framework running (you guessed it) Javascript.
+The system uses Lua, Roblox's default programming language. It consists of Database storage, search algorithms, server-client communication, User Interfaces (GUIs) and much more. It allows administrators of Roblox games to mute, warn, kick, ban, etc players. There is a full permission system built into the system with a custom console for debugging and for more advanced moderation actions. The whole project was coded and designed my me with design input from the client.
 
-### Commands
-`-status` or `-s` for short returns the full playerlist for the server. It also displays a link called connect which connects you to the server through a browser opening the FiveM application. Here you can see the command being used to check the playerlist of [TXDPS-RP](https://txdps-rp.com/):
+### Screenshots
+![Console](https://github.com/AstonAceMan/AstonAceMan.github.io/blob/main/resources/img4.PNG?raw=true)
 
-![status command](https://astonaceman.github.io/resources/img1.PNG)
+![Console](https://github.com/AstonAceMan/AstonAceMan.github.io/blob/main/resources/img3.PNG?raw=true)
 
-`-id <player id>` can be used to get the status of individual players on the server. Information includes the Ping in milliseconds between the player and the server, and any linked profiles the user may have such as the Steam profile in the following example:
+![Console](https://github.com/AstonAceMan/AstonAceMan.github.io/blob/main/resources/img5.PNG?raw=true)
 
-![id command](https://astonaceman.github.io/resources/img2.PNG)
+![Console](https://github.com/AstonAceMan/AstonAceMan.github.io/blob/main/resources/img6.PNG?raw=true)
+
 
 ### Conclusion
-Although this was a fairly simple project, it is a useful one that I continue to use to this day. The current version of this project is not available on GitHub, but you can view the source of an older version of the bot back when it used to be hosted on Heroku: [![ok then](https://img.shields.io/badge/-View%20Repo-inactive?logo=github)](https:///github.com/AstonAceMan/FiveM)
+This was a fairly advanced project which took about a month to develop from scratch. It should be noted that the back-end of this system was in my opinion the more impressive part but for obvious reasons I unfortunately can't display this here. Because of this, it is not available on GitHub, but you can take a look at the full console documentation for moderators which I also coded entirely from scratch with HTML, JS, CSS: [![ok then](https://img.shields.io/badge/-Documentation-red?logo=cliqz)](http://docs.unaux.com)
