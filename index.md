@@ -15,7 +15,7 @@ With 13 years of programming experience I know my way around software and develo
 
 If you would like to get a quote for a job, or you are just interested in getting to know me, feel free to contact me. I'm contactable through many methods, but I am most active on Discord. Here are all of my details:
 
-Ph: +61 490 550 239 *(fees may apply, especially international calls)*
+Phone: +61 490 550 239 *(fees may apply)*
 
 Email: astonbolwell@gmail.com
 
