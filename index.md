@@ -7,7 +7,7 @@ Welcome to my portfolio. If you would like to get straight into things, here are
 
 ### A Bit About Myself
 
-My name is Aston Bolwell and I am a 17 year old student studying Software Development in Melbourne, Australia. I have many hobbies and interests,  such as Photography, Electronics, Video editing, Gaming, and last but definitely not least, Programming.
+My name is Aston Bolwell and I am a student studying Software Development in Melbourne, Australia. I have many hobbies and interests,  such as Photography, Electronics, Video editing, Gaming, and last but definitely not least, Programming.
 
 With 13 years of programming experience I know my way around software and development. I'm fluent with all common languages such as Lua, HTML, JS, CSS, PHP, NodeJS, C#, C++, Python and much more. I'm always looking for new languages, so if you have a need for some work done in a language not listed, I'll still likely be interested.
 
