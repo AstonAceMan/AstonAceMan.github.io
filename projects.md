@@ -35,4 +35,4 @@ Just a funny site I made to joke around with friends about being a 'Russian Hack
 ### I've done a lot more
 I've done plenty of development outside of these few projects. Feel free to send me a message through Discord if you are interested in my skillset to get a quote, or if you just need someone to help out on a small bug fix.
 
-[![](https://img.shields.io/badge/Discord%3A-ASTON%238764-7289DA?logo=discord&style=flat-square)](https://discordhub.com/profile/410986116569628672) [![](https://img.shields.io/badge/GitHub%3A-AstonBolwell-CCCCCC?logo=github&style=flat-square)](https://github.com/AstonBolwell) [![](https://img.shields.io/badge/Website%3A-astonbolwell.github.io-00AEF0?logo=cliqz&style=flat-square)](https://astonbolwell.github.io)
+[![](https://img.shields.io/badge/Discord%3A-Aston%238764-7289DA?logo=discord&style=flat-square)](https://discordhub.com/profile/410986116569628672) [![](https://img.shields.io/badge/GitHub%3A-AstonBolwell-CCCCCC?logo=github&style=flat-square)](https://github.com/AstonBolwell) [![](https://img.shields.io/badge/Website%3A-astonbolwell.github.io-00AEF0?logo=cliqz&style=flat-square)](https://astonbolwell.com.au)
