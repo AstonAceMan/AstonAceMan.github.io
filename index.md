@@ -1,9 +1,9 @@
 
-[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonaceman.github.io)
+[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.github.io)
 
 ## Aston Bolwell's Portfolio
 
-Welcome to my portfolio. If you would like to get straight into things, here are some of my projects: [![ok then](https://img.shields.io/badge/-Projects-blue)](https://astonaceman.github.io/projects)
+Welcome to my portfolio. If you would like to get straight into things, here are some of my projects: [![ok then](https://img.shields.io/badge/-Projects-blue)](https://astonbolwell.github.io/projects)
 
 ### A Bit About Myself
 
