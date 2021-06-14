@@ -15,5 +15,5 @@ Pretty simple stuff. It is all client-side JS, so a not-very-secure 'code' which
 
 
 ### Conclusion
-Bit of a silly project, but ~~you can check it out here~~: [![](https://img.shields.io/badge/Website%3A-kgb.unaux.com-00AEF0?logo=cliqz&style=flat-square)](http://kgb.unaux.com) *
-####Link No Longer active :(
+Bit of a silly project, but ~~you can check it out here~~: [![](https://img.shields.io/badge/Website%3A-kgb.unaux.com-00AEF0?logo=cliqz&style=flat-square)](http://kgb.unaux.com)
+<span style="color:red">Link no longer active.</span>
