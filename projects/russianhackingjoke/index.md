@@ -1,6 +1,6 @@
 
 
-[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonaceman.github.io) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonaceman.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-Russian%20Hacking%20Joke-purple?style=for-the-badge)](https://astonaceman.github.io/projects/russianhackingjoke)
+[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.github.io) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonbolwell.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-Russian%20Hacking%20Joke-purple?style=for-the-badge)](https://astonbolwell.github.io/projects/russianhackingjoke)
 
 ![](https://img.shields.io/badge/-HTML-lightgrey?logo=html5) ![](https://img.shields.io/badge/-CSS-yellow?logo=css3) ![](https://img.shields.io/badge/-Javascript-red?logo=javascript)
 
@@ -11,7 +11,7 @@ Ok, so a bit of a weird one. This was a silly project I worked on to develop my 
 Pretty simple stuff. It is all client-side JS, so a not-very-secure 'code' which is just `soyuz`. It was a fun little project to get the scrolling text, and text effects working along with a bit of client-side Javascript. Not my proudest of works, but it helped me develop some key skills in the web-development area.
 
 ### Screenshots
-![Console](https://github.com/AstonAceMan/AstonAceMan.github.io/blob/main/resources/img10.PNG?raw=true)
+![Console](https://github.com/astonbolwell/astonbolwell.github.io/blob/main/resources/img10.PNG?raw=true)
 
 
 ### Conclusion
