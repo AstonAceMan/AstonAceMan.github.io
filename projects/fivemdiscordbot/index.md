@@ -1,4 +1,4 @@
-[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.github.io) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonbolwell.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-FiveM%20Discord%20Bot-purple?style=for-the-badge)](https://astonbolwell.github.io/projects/fivemdiscordbot)
+[![ok then](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.com.au) ▶ [![ok then](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonbolwell.github.io/projects) ▶ [![ok then](https://img.shields.io/badge/-FiveM%20Discord%20Bot-purple?style=for-the-badge)](https://astonbolwell.github.io/projects/fivemdiscordbot)
 
 ![ok then](https://img.shields.io/badge/-NodeJS-green?logo=node.js) ![ok then](https://img.shields.io/badge/-JSON-red?logo=json) ![ok then](https://img.shields.io/badge/-Discord%20API-9cf?logo=discord)
 
