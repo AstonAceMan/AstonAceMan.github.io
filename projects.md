@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.github.io) ▶ [![](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonbolwell.github.io/projects)
+[![](https://img.shields.io/badge/-Home-blue?style=for-the-badge)](https://astonbolwell.com.au) ▶ [![](https://img.shields.io/badge/-Projects-blue?style=for-the-badge)](https://astonbolwell.github.io/projects)
 
 ## Projects
 
