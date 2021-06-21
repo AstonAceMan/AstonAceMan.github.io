@@ -15,5 +15,4 @@ Pretty simple stuff. It is all client-side JS, so a not-very-secure 'password' w
 
 
 ### Conclusion
-Bit of a silly project, but ~~you can check it out here~~: 
-*<span style="color:red">Link no longer active.</span>*
+Bit of a silly project, but you can check it out here: [![](https://img.shields.io/badge/Website%3A-astonbolwell.com.au/projects/kgb-00AEF0?logo=cliqz&style=flat-square)](https://astonbolwell.com.au/projects/kgb)
