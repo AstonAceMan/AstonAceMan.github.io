@@ -192,7 +192,7 @@ createApp({
 
 
                 
-                //doc.save("a4.pdf");                
+                doc.save(this.generalinfo.date+" INVOICE "+this.generalinfo.invoiceid+".pdf");                
                 doc.output('datauri')
             }
         }
