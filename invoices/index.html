@@ -1,16 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="main.js"></script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invoice Generator</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-    Hello World
+        <div class="row" id="vuemount">
+            <div class="col-md-12">
+                <form action="index.html" method="post">
+
+                    <h1> Create an Invoice </h1>
+                    
+                    <fieldset>
+                    
+                        <legend><span class="number">1</span> General Information</legend>
+                        
+                        <label for="company">Company Name:</label>
+                        <input type="text" name="company_name" v-model="generalinfo.companyname">
+
+                        <label for="name">Contact Name:</label>
+                        <input type="text" name="contact_name" v-model="generalinfo.contactname">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="user_email" v-model="generalinfo.email">
+                    
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="user_phone" v-model="generalinfo.phone">
+
+                        <label for="company">Biller Name:</label>
+                        <input type="text" name="biller_name" v-model="generalinfo.biller">
+                    
+                    </fieldset>
+                    <fieldset>
+                    
+                        <legend><span class="number">2</span> Billing Methods</legend>
+                        
+                        <button type="button" class="add" @click="addpayment()">Add</button><br><br>
+
+                        <span v-for="(item, index) in paymentMethods">
+                            <fieldset>
+                                <label for="method">Billing Method:</label>
+                                <select v-model="item.type" name="invoice_method">
+                                    <option value="PayPal">PayPal</option>
+                                    <option value="BSBAcc">BSB/Acc</option>
+                                </select>
+
+                                <span v-if="item.type == 'PayPal'">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="user_email" v-model="item.email">
+                                </span>
+
+                                <span v-if="item.type == 'BSBAcc'">
+                                    <label for="BSB">BSB:</label>
+                                    <input type="text" name="BSB" v-model="item.bsb">
+                                    <label for="Account">Account:</label>
+                                    <input type="text" name="Account" v-model="item.account">
+                                </span>
     
-</body>
+                                <button type="button" class="remove" @click="removepayment(index)">Remove</button>
+                            </fieldset>
+                        </span>
+                    
+                    </fieldset>
+                    <fieldset>
+
+                        <legend><span class="number">3</span> Invoice Details</legend>
+
+                        <label for="Account">Invoice Number:</label>
+                        <input type="text" name="Account" v-model="generalinfo.invoiceid">
+
+                        <label for="Account">Date Created:</label>
+                        <input type="date" name="Account" v-model="generalinfo.date">
+
+                        <label for="Account">Due Date: ({{datediff()}} day payment window)</label>
+                        <input type="date" name="Account" v-model="generalinfo.duedate">
+
+                        <label for="notes">Footer Notes:</label>
+                        <textarea name="invoice_notes" v-model="generalinfo.notes"></textarea>
+
+                        <label for="watermark">Watermark:</label>
+                        <select name="invoice_watermark" v-model="generalinfo.watermark">
+                            <option value="none">No Watermark</option>
+                            <option value="unpaid">Unpaid</option>
+                            <option value="overdue">Overdue</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                    
+                    </fieldset>
+                    <fieldset>
+                        <legend><span class="number">4</span> Invoice Items</legend>
+
+                        <button type="button" class="add" @click="additem()">Add</button><br><br>
+
+                        <span v-for="(item, index) in invoiceitems">
+                            <fieldset>
+                                <label for="desc">Item Description:</label>
+                                <input type="text" name="desc" v-model="item.desc" placeholder="Product Description">
+
+                                <label for="qty">QTY:</label>
+                                <input type="number" name="qty" v-model="item.qty">
+
+                                <label for="price">Unit Price ($):</label>
+                                <input type="number" name="qty" v-model="item.price" step="0.05">
+    
+                                <button type="button" class="remove" @click="removeitem(index)">Remove</button>
+                            </fieldset>
+                        </span>
+
+                        <label>Total Price: ${{sum(invoiceitems,'price','qty')}}</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span class="number">5</span> Tax</legend>
+
+                        <span class="switch">
+                            <input id="online" type="checkbox" v-model="generalinfo.taxinc">
+                            <label for="online">Items are tax-inclusive</label>
+                        </span>
+                        <br>
+                        <span v-if="!generalinfo.taxinc">
+                            <label for="taxtype">Tax Type(s):</label>
+                            <input type="text" name="taxtype" v-model="generalinfo.taxtype">
+
+                            <label for="taxamount">Tax Amount (%):</label>
+                            <input type="text" name="taxamount" v-model="generalinfo.taxamount">
+
+                            <label>Total Price After Tax: ${{tax(sum(invoiceitems,'price','qty'),generalinfo.taxamount)}}</label>
+                        </span>
+                    </fieldset>
+                
+                    <button type="button" @click="generatePDF()">Generate Invoice PDF</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
