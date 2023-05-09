@@ -1,0 +1,14 @@
+//colours
+$bg: #454344;
+
+*{
+    //colours mapped to css variables
+    --bg: $bg;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    background: $bg;
+}

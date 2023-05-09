@@ -1,0 +1,9 @@
+* {
+  --bg: $bg;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #454344;
+}/*# sourceMappingURL=style.css.map */
