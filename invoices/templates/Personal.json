@@ -1,0 +1,42 @@
+{
+    "hidden":[
+        "Billing Methods",
+        "General Information"
+    ],
+    "generalinfo": {
+        "companyname": "Aston Bolwell",
+        "contactname": "",
+        "biller": "Aston Bolwell",
+        "email": "astonbolwell@gmail.com",
+        "phone": "+61 490 550 239",
+        "watermark":"none",
+        "invoiceid": "",
+        "taxinc": true,
+        "taxtype": "GST",
+        "taxamount": "10",
+        "date": "NOW",
+        "duedate": "+30",
+        "notes": "Invoices paid after the due date may incur an additional fee up to 15%. Please contact Aston Bolwell if you wish to request an extension to the listed due date.\n\nAll prices are listed in Australian Dollars (AUD) with GST Inc. unless otherwise specified."
+    },
+    "paymentMethods": [
+        {
+            "type":"PayPal",
+            "email": "astonbolwell@gmail.com",
+            "bsb": "",
+            "account": ""
+        },
+        {
+            "type":"BSBAcc",
+            "email": "",
+            "bsb": "633 000",
+            "account": "184 214 799"
+        }
+    ],
+    "invoiceitems": [
+        {
+            "qty": 1,
+            "desc": "",
+            "price": ""
+        }
+    ]
+}

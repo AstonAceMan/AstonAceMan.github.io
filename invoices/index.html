@@ -15,10 +15,20 @@
                 <form action="index.html" method="post">
 
                     <h1> Create an Invoice </h1>
-                    
                     <fieldset>
+                        <legend><span class="number">1</span> Invoice Templates</legend>
+                        <label for="company">Choose a template for the invoice, or create a custom invoice:</label>
+                        <select v-model="invoicetype" name="invoice_template" aria-placeholder="Choose a Template">
+                            <option value="Unchosen" disabled selected>Select a Template...</option>
+                            <option value="Custom">Custom</option>
+                            <option value="Personal">Personal</option>
+                            <option value="ABScripts">AB Scripts</option>
+                            <option value="MSA">MSA</option>
+                        </select>
+                    </fieldset>
+                    <fieldset v-if="!findpage('General Information')">
                     
-                        <legend><span class="number">1</span> General Information</legend>
+                        <legend><span class="number">2</span> General Information</legend>
                         
                         <label for="company">Company Name:</label>
                         <input type="text" name="company_name" v-model="generalinfo.companyname">
@@ -36,9 +46,9 @@
                         <input type="text" name="biller_name" v-model="generalinfo.biller">
                     
                     </fieldset>
-                    <fieldset>
+                    <fieldset v-if="!findpage('Billing Methods')">
                     
-                        <legend><span class="number">2</span> Billing Methods</legend>
+                        <legend><span class="number">3</span> Billing Methods</legend>
                         
                         <button type="button" class="add" @click="addpayment()">Add</button><br><br>
 
@@ -67,9 +77,9 @@
                         </span>
                     
                     </fieldset>
-                    <fieldset>
+                    <fieldset v-if="!findpage('Invoice Details')">
 
-                        <legend><span class="number">3</span> Invoice Details</legend>
+                        <legend><span class="number">4</span> Invoice Details</legend>
 
                         <label for="Account">Invoice Number:</label>
                         <input type="text" name="Account" v-model="generalinfo.invoiceid">
@@ -92,8 +102,9 @@
                         </select>
                     
                     </fieldset>
-                    <fieldset>
-                        <legend><span class="number">4</span> Invoice Items</legend>
+                    <fieldset  v-if="!findpage('Invoice Items')">
+                        <legend v-if="invoicetype=='Custom'"><span class="number">5</span> Invoice Items</legend>
+                        <legend v-else><span class="number">2</span> Invoice Items</legend>
 
                         <button type="button" class="add" @click="additem()">Add</button><br><br>
 
@@ -114,8 +125,8 @@
 
                         <label>Total Price: ${{sum(invoiceitems,'price','qty')}}</label>
                     </fieldset>
-                    <fieldset>
-                        <legend><span class="number">5</span> Tax</legend>
+                    <fieldset  v-if="!findpage('Tax')">
+                        <legend><span class="number">6</span> Tax</legend>
 
                         <span class="switch">
                             <input id="online" type="checkbox" v-model="generalinfo.taxinc">
@@ -133,13 +144,14 @@
                         </span>
                     </fieldset>
                 
-                    <button type="button" @click="generatePDF()">Generate Invoice PDF</button>
+                    <button  v-if="!findpage('Button')" type="button" @click="generatePDF()">Generate Invoice PDF</button>
                 </form>
             </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

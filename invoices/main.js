@@ -4,6 +4,16 @@ const { jsPDF } = jspdf;
 createApp({
     data() {
         return {
+            invoicetype:'Unchosen',
+            invoicetypes:'',
+            hidden:[
+                "General Information",
+                "Billing Methods",
+                "Invoice Details",
+                "Invoice Items",
+                "Tax",
+                "Button"
+            ],
             generalinfo: {
                 companyname: "",
                 contactname: "",
@@ -70,6 +80,9 @@ createApp({
             },
             tax(amount,taxamount){
                 return (Math.round(amount * 100 + amount * taxamount) / 100).toFixed(2)
+            },
+            findpage(page){
+                return this.hidden.includes(page)
             },
             generatePDF(){
                 const doc = new jsPDF();
@@ -188,12 +201,9 @@ createApp({
                 doc.text("TOTAL", doc.internal.pageSize.getWidth()-83, runningY)
                 doc.text((Math.round((runningTotal+taxed)*100)/100).toFixed(2), doc.internal.pageSize.getWidth()-45, runningY)
 
-
-
-
                 
                 doc.save(this.generalinfo.date+" INVOICE "+this.generalinfo.invoiceid+".pdf");                
-                doc.output('datauri')
+                //doc.output('datauri')
             }
         }
     },
@@ -206,3 +216,4 @@ function parseDate(str) {
     var ymd = str.split('-');
     return new Date(ymd[0], ymd[1] - 1, ymd[2]);
 }
+
